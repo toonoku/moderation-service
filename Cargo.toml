@@ -1,0 +1,23 @@
+[package]
+name = "moderation-service"
+version = "1.0.0"
+edition = "2021"
+authors = ["Ege Demirkıran <justice39.dev@gmail.com>"]
+
+[dependencies]
+axum = { version = "0.8.1", features = ["macros"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+regex = "1"
+aho-corasick = "1"
+lazy_static = "1"
+sqlx = { version = "0.7", features = [
+    "postgres",
+    "runtime-tokio-rustls",
+    "macros",
+] }
+moka = { version = "0.12", features = ["future"] }
+thiserror = "2.0.14"
+garde = { version = "0.22.0", features = ["derive", "pattern"] }
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tracing = "0.1.41"

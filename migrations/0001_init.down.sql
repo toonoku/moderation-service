@@ -1,0 +1,5 @@
+DROP TYPE IF EXISTS comment_status_enum CASCADE;
+
+DROP TABLE IF EXISTS bad_words;
+DROP TABLE IF EXISTS regex_rules;
+DROP TABLE IF EXISTS settings;
